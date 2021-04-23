@@ -13,10 +13,10 @@ public class App {
         System.out.println(beanagain.getMessage());
         Cat mycat =
                 (Cat) applicationContext.getBean("cat");
-        System.out.println(mycat.getName());
+
         Cat yourcat =
                 (Cat) applicationContext.getBean("cat");
-        System.out.println(yourcat.getName());
+
         System.out.println("Это ссылка на один бин? " + (bean==beanagain));
         System.out.println("Это ссылка на один бин? " + (mycat==yourcat));
 
